@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace CapaEntidades
 {
-    internal class entEquipos
+    public class entEquipos
     {
+        public int IdEquipo { get; set; }
+        public int IdCliente { get; set; }
+        public string Marca { get; set; }
+        public string Modelo { get; set; }
+        public string NumeroSerie { get; set; }
+        public string DescripcionProblema { get; set; }
+        public DateTime FechaIngreso { get; set; }
     }
 }

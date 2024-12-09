@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace CapaEntidades
 {
-    internal class entServicios
+    public class entServicios
     {
+        public int IdServicio { get; set; }
+        public string NombreServicio { get; set; }
+        public decimal Costo { get; set; }
     }
 }
