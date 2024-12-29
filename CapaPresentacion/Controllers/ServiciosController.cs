@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace CapaPresentacion.Controllers
 {
-    public class UsuariosController : Controller
+    public class ServiciosController : Controller
     {
-        // GET: Usuarios
+        // GET: Servicios
         public ActionResult Index()
         {
             return View();
