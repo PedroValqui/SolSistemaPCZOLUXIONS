@@ -205,3 +205,10 @@ namespace CapaAccesoDatos
             {
                 cmd.Connection.Close();
             }
+
+            return eliminar;
+        }
+
+        #endregion Métodos
+    }
+}
