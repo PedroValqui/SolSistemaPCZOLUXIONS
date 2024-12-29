@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using CapaAplicacion;
 using CapaEntidades;
-using CapaAccesoDatos;
 
 namespace CapaPresentacion.Controllers
 {
@@ -24,10 +24,10 @@ namespace CapaPresentacion.Controllers
             {
                 String usuario = Convert.ToString(formulario["txtUsuario"]);
                 String contrasena = Convert.ToString(formulario["txtContrasena"]);
-                Empleado empleado = logEmpleado.Instancia.VerificarInicioSesion(usuario, contrasena);
-                if (empleado != null)
+                entUsuarios u = logUsuarios.Instancia.VerificarUsuarios(usuario, contrasena);
+                if (u != null)
                 {
-                    Session["empleado"] = empleado;
+                    Session["Usuario"] = u;
                     return View("MenuPrincipal");
                 }
                 else
