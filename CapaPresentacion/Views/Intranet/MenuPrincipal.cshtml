@@ -1,0 +1,12 @@
+﻿@using CapaEntidades;
+@{
+    ViewBag.Title = "MenuPrincipal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    entUsuarios u = (entUsuarios)Session["Usuario"];
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Hola me alegra verte nuevamente @u.Nombres @u.Apellidos</h1>
+</div>
+
