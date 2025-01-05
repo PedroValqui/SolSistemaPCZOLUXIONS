@@ -1,0 +1,80 @@
+﻿@model CapaEntidades.entUsuarios
+
+@{
+    ViewBag.Title = "Editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Editar Empleado</h1>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Registro
+        </div>
+        <div class="card-body">
+            <form action="Editar" method="post">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <input class="form-control" id="txtIdUsuario" name="txtIdUsuario" type="text" value="@Model.IdUsuario" hidden />
+                        <div class="form-floating mb-3 mb-md-0">
+                            <input class="form-control" id="txtNombres" name="txtNombres" type="text" placeholder="Nombres" value="@Model.Nombres" />
+                            <label for="txtNombres">Nombres</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input class="form-control" id="txtApellidos" name="txtApellidos" type="text" placeholder="Apellidos" value="@Model.Apellidos" />
+                            <label for="txtApellidos">Apellidos</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 mb-md-0">
+                            <input class="form-control" id="txtCorreo" name="txtCorreo" type="email" placeholder="Correo" value="@Model.Correo" />
+                            <label for="txtCorreo">Correo</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 mb-md-0">
+                            <input class="form-control" id="txtCargo" name="txtCargo" type="text" placeholder="Cargo" value="@Model.Cargo" />
+                            <label for="txtCargo">Cargo</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 mb-md-0">
+                            <input class="form-control" id="txtUsuario" name="txtUsuario" type="text" placeholder="Usuario" value="@Model.Usuario" />
+                            <label for="txtUsuario">Usuario</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 mb-md-0">
+                            <input class="form-control" id="txtContrasena" name="txtContrasena" type="password" placeholder="Contraseña" value="@Model.Contrasena" />
+                            <label for="txtContrasena">Contraseña</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 mb-md-0">
+                            <div class="d-grid">
+                                <a class="btn btn-primary btn-block" href="@Url.Action("Lista","Usuarios")">Regresar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 mb-md-0">
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-block">Registrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </form>
+        </div>
+    </div>
+</div>

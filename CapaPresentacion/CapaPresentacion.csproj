@@ -189,6 +189,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Intranet\InicioSesion.cshtml" />
     <Content Include="Views\Intranet\MenuPrincipal.cshtml" />
+    <Content Include="Views\Usuarios\Lista.cshtml" />
+    <Content Include="Views\Usuarios\Insertar.cshtml" />
+    <Content Include="Views\Usuarios\Editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -198,7 +201,6 @@
     <Folder Include="Views\OrdenServicio\" />
     <Folder Include="Views\Servicios\" />
     <Folder Include="Views\SesionIntranet\" />
-    <Folder Include="Views\Usuarios\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

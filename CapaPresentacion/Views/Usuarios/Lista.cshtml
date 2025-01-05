@@ -1,0 +1,56 @@
+﻿@model IEnumerable<CapaEntidades.entUsuarios>
+
+@{
+    ViewBag.Title = "Lista";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Lista de Empleados</h1>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Tabla
+        </div>
+        <div class="card-body">
+            <a class="btn btn-primary btn-block" href="@Url.Action("Insertar","Usuarios")">Nuevo usuario</a>
+            <hr />
+            <table id="datatablesSimple">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Correo</th>
+                        <th>Cargo</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Correo</th>
+                        <th>Cargo</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.IdUsuario</td>
+                            <td>@item.Nombres</td>
+                            <td>@item.Apellidos</td>
+                            <td>@item.Correo</td>
+                            <td>@item.Cargo</td>                            
+                            <td>
+                                <a class="btn btn-primary btn-block" href="@Url.Action("Editar","Usuarios", new { IdUsuario = item.IdUsuario })">Editar</a>
+                                <a class="btn btn-primary btn-block" href="@Url.Action("Eliminar","Usuarios", new { IdUsuario = item.IdUsuario })">Eliminar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

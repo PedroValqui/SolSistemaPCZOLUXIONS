@@ -34,6 +34,69 @@ namespace CapaAplicacion
                 throw ex;
             }
         }
+
+        public List<entUsuarios> ListarUsuarios()
+        {
+            try
+            {
+                return datUsuarios.Instancia.ListarUsuarios();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+
+            }
+        }
+        public entUsuarios BuscarUsuario(int IdUsuario)
+        {
+            try
+            {
+                return datUsuarios.Instancia.BuscarUsuario(IdUsuario);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public Boolean InsertarUsuario(entUsuarios u)
+        {
+            try
+            {
+                return datUsuarios.Instancia.InsertarUsuario(u);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+        public Boolean EditarUsuario(entUsuarios u)
+        {
+            try
+            {
+                return datUsuarios.Instancia.EditarUsuario(u);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public Boolean EliminarUsuario(int IdUsuario)
+        {
+            try
+            {
+                return datUsuarios.Instancia.EliminarUsuario(IdUsuario);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         #endregion metodos
+
     }
 }
