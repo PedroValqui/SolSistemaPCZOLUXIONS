@@ -127,6 +127,7 @@
     <Compile Include="Controllers\OrdenServicioController.cs" />
     <Compile Include="Controllers\ServiciosController.cs" />
     <Compile Include="Controllers\UsuariosController.cs" />
+    <Compile Include="Filtros\SesionIntranetController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -196,6 +197,7 @@
     <Folder Include="Views\Equipos\" />
     <Folder Include="Views\OrdenServicio\" />
     <Folder Include="Views\Servicios\" />
+    <Folder Include="Views\SesionIntranet\" />
     <Folder Include="Views\Usuarios\" />
   </ItemGroup>
   <ItemGroup>

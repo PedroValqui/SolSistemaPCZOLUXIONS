@@ -35,7 +35,7 @@ namespace CapaAccesoDatos
                 cmd = new SqlCommand("spVerificarUsuarios", cn); //Consulta a la base de datos
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@prmUsuario", Usuario);
-                cmd.Parameters.AddWithValue("@prmContraseña", Contrasena);
+                cmd.Parameters.AddWithValue("@prmContrasena", Contrasena);
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
 

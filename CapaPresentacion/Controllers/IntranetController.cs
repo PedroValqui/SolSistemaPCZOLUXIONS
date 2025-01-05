@@ -43,7 +43,7 @@ namespace CapaPresentacion.Controllers
 
         }
 
-        [HttpGet]
+        [Filtros.SesionIntranetController]
         public ActionResult MenuPrincipal()
         {
             return View();
