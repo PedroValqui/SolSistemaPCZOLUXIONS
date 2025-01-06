@@ -54,7 +54,7 @@ namespace CapaAccesoDatos
             return lista;
         }
 
-        public entServicios BuscarServicio(int idServicio)
+        public entServicios BuscarServicios(int idServicio)
         {
             SqlCommand cmd = null;
             entServicios s = null;
@@ -88,7 +88,7 @@ namespace CapaAccesoDatos
             return s;
         }
 
-        public Boolean InsertarServicio(entServicios s)
+        public Boolean InsertarServicios(entServicios s)
         {
             SqlCommand cmd = null;
             Boolean inserta = false;
@@ -120,7 +120,7 @@ namespace CapaAccesoDatos
             return inserta;
         }
 
-        public Boolean EditarServicio(entServicios s)
+        public Boolean EditarServicios(entServicios s)
         {
             SqlCommand cmd = null;
             Boolean editar = false;
@@ -153,7 +153,7 @@ namespace CapaAccesoDatos
             return editar;
         }
 
-        public Boolean EliminarServicio(int idServicio)
+        public Boolean EliminarServicios(int idServicio)
         {
             SqlCommand cmd = null;
             Boolean eliminar = false;

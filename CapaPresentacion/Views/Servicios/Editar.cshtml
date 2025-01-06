@@ -1,0 +1,52 @@
+﻿@model CapaEntidades.entServicios
+
+@{
+    ViewBag.Title = "Editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Editar Servicio</h1>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Registro
+        </div>
+        <div class="card-body">
+            <form action="Editar" method="post">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <input class="form-control" id="txtIdServicio" name="txtIdServicio" type="text" value="@Model.IdServicio" hidden />
+                        <div class="form-floating mb-3 mb-md-0">
+                            <input class="form-control" id="txtNombreServicio" name="txtNombreServicio" type="text" placeholder="Nombre del Servicio" value="@Model.NombreServicio" />
+                            <label for="txtNombreServicio">Nombre del Servicio</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input class="form-control" id="txtCosto" name="txtCosto" type="text" placeholder="Costo" value="@Model.Costo" />
+                            <label for="txtCosto">Costo</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 mb-md-0">
+                            <div class="d-grid">
+                                <a class="btn btn-primary btn-block" href="@Url.Action("Lista","Servicios")">Regresar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 mb-md-0">
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-block">Actualizar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </form>
+        </div>
+    </div>
+</div>

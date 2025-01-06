@@ -27,7 +27,7 @@ namespace CapaAccesoDatos
         public SqlConnection Conectar()
         {
             SqlConnection cn = new SqlConnection();
-            cn.ConnectionString = "Data Source=DESKTOP-GI6E9GB\\SQLEXPRESS; initial catalog=DBPCZOLUXIONS; Integrated Security=true ";
+            cn.ConnectionString = "Data Source=DESKTOP-ADSR2QA\\SQLEXPRESS; initial catalog=DBPCZOLUXIONS; Integrated Security=true ";
 
             return cn;
         }

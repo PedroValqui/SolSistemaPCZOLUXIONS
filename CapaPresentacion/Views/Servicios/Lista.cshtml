@@ -1,0 +1,52 @@
+﻿@model IEnumerable<CapaEntidades.entServicios>
+
+@{
+    ViewBag.Title = "Lista";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Lista de Servicios</h1>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Tabla de Servicios
+        </div>
+        <div class="card-body">
+            <a class="btn btn-primary btn-block" href="@Url.Action("Insertar","Servicios")">Nuevo Servicio</a>
+            <hr />
+            <table id="datatablesSimple">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre del Servicio</th>
+                        <th>Costo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre del Servicio</th>
+                        <th>Costo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.IdServicio</td>
+                            <td>@item.NombreServicio</td>
+                            <td>@item.Costo.ToString("C")</td>
+                            <td>
+                                <a class="btn btn-primary btn-block" href="@Url.Action("Editar","Servicios", new { IdServicio = item.IdServicio })">Editar</a>
+                                <a class="btn btn-danger btn-block" href="@Url.Action("Eliminar","Servicios", new { IdServicio = item.IdServicio })">Eliminar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
