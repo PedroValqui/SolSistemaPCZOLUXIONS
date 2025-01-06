@@ -1,7 +1,7 @@
 ﻿@using CapaEntidades;
 
 @{
-	entUsuarios u = (entUsuarios)Session["Usuario"];
+    entUsuarios u = (entUsuarios)Session["Usuario"];
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -64,23 +64,23 @@
                         </a>
                         <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                <a class="nav-link collapsed" href="@Url.Action("Lista","Usuarios")"  aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                <a class="nav-link collapsed" href="@Url.Action("Lista","Usuarios")" aria-expanded="false" aria-controls="pagesCollapseAuth">
                                     Usuarios
                                     <div class="sb-sidenav-collapse-arrow"></div>
                                 </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" aria-expanded="false" aria-controls="pagesCollapseError">
+                                <a class="nav-link collapsed" href="@Url.Action("Lista","Clientes")" aria-expanded="false" aria-controls="pagesCollapseError">
                                     Clientes
                                     <div class="sb-sidenav-collapse-arrow"></div>
                                 </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" aria-expanded="false" aria-controls="pagesCollapseError">
+                                <a class="nav-link collapsed" href="@Url.Action("Lista","Equipos")" aria-expanded="false" aria-controls="pagesCollapseError">
                                     Equipos
                                     <div class="sb-sidenav-collapse-arrow"></div>
                                 </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" aria-expanded="false" aria-controls="pagesCollapseError">
+                                <a class="nav-link collapsed" href="@Url.Action("Lista","Servicios")" aria-expanded="false" aria-controls="pagesCollapseError">
                                     Servicios
                                     <div class="sb-sidenav-collapse-arrow"></div>
                                 </a>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" aria-expanded="false" aria-controls="pagesCollapseError">
+                                <a class="nav-link collapsed" href="@Url.Action("Lista","OrdenServicio")" aria-expanded="false" aria-controls="pagesCollapseError">
                                     Orden de servicios
                                     <div class="sb-sidenav-collapse-arrow"></div>
                                 </a>

@@ -1,0 +1,79 @@
+﻿@model CapaEntidades.entClientes
+
+@{
+    ViewBag.Title = "Insertar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Insertar Cliente</h1>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Registro
+        </div>
+        <div class="card-body">
+            <form action="Insertar" method="post">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 mb-md-0">
+                            <input class="form-control" id="txtNombres" name="txtNombres" type="text" placeholder="Nombres" />
+                            <label for="txtNombres">Nombres</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input class="form-control" id="txtApellidos" name="txtApellidos" type="text" placeholder="Apellidos" />
+                            <label for="txtApellidos">Apellidos</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 mb-md-0">
+                            <input class="form-control" id="txtTipoDocumentoIdentidad" name="txtTipoDocumentoIdentidad" type="text" placeholder="Tipo de Documento" />
+                            <label for="txtTipoDocumentoIdentidad">Tipo Documento Identidad</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 mb-md-0">
+                            <input class="form-control" id="txtDocumentoIdentidad" name="txtDocumentoIdentidad" type="text" placeholder="Numero Documento de Identidad" />
+                            <label for="txtDocumentoIdentidad">Numero Documento de Identidad</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 mb-md-0">
+                            <input class="form-control" id="txtCelular" name="txtCelular" type="text" placeholder="Celular" />
+                            <label for="txtCelular">Celular</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 mb-md-0">
+                            <input class="form-control" id="txtCorreo" name="txtCorreo" type="email" placeholder="Correo" />
+                            <label for="txtCorreo">Correo</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 mb-md-0">
+                            <div class="d-grid">
+                                <a class="btn btn-primary btn-block" href="@Url.Action("Lista","Clientes")">Regresar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 mb-md-0">
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-block">Registrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </form>
+        </div>
+    </div>
+</div>

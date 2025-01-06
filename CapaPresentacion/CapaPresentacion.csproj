@@ -192,11 +192,13 @@
     <Content Include="Views\Usuarios\Lista.cshtml" />
     <Content Include="Views\Usuarios\Insertar.cshtml" />
     <Content Include="Views\Usuarios\Editar.cshtml" />
+    <Content Include="Views\Clientes\Lista.cshtml" />
+    <Content Include="Views\Clientes\Insertar.cshtml" />
+    <Content Include="Views\Clientes\Editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Clientes\" />
     <Folder Include="Views\Equipos\" />
     <Folder Include="Views\OrdenServicio\" />
     <Folder Include="Views\Servicios\" />
